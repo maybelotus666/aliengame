@@ -1,34 +1,67 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .agradecimentos {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #f9f9f9;
-    padding: 20px;  
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  z-index: 10;
+  max-width: 90%;
 }
 
-dialog{
-    border: none;
-    border-radius:8px;
-    padding:20px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 500px;
+.video video {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
 }
 
-dialog::backdrop{
-    background: rgba(0, 0, 0, 0.5);
+#open-modal {
+  margin-top: 15px;
+  padding: 8px 16px; /* Menor que os 10px 20px originais */
+  border: none;
+  border-radius: 6px;
+  background-color: #84ccf3;
+  color: white;
+  cursor: pointer;
+  font-size: 14px; /* Fonte menor */
+  width: fit-content; /* Largura automática */
+  align-self: center; /* Centraliza no flex pai */
+  transition: all 0.3s ease;
+  font-family: 'Pixeloid Sans', sans-serif;
 }
 
+.modal{
+    font-family: 'Pixeloid Sans', sans-serif;
+}
+
+#open-modal:hover {
+  background-color: rgb(238, 255, 124);
+  transform: scale(1.05); 
+}
 
 button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #84ccf3;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #84ccf3;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-    background-color: rgb(238, 255, 124);
+  background-color: rgb(238, 255, 124);
 }
