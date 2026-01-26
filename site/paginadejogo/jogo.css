@@ -1,0 +1,67 @@
+.header {
+    font-size: 36px;
+    padding: 10%;
+}
+
+.celular-jogo {
+    width: 300px;
+    height: 600px;
+    margin: 20px auto;
+    border: 12px solid #000000;
+    border-radius: 40px;
+    background-image: url('../imagens/88c121cb2582253a16951a43864ebe1f.gif ');
+    box-shadow: 0 0 20px rgba(45, 156, 215, 0.5);
+    overflow: hidden;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    }
+
+    .tela-jogo {
+        background-color: rgba(255, 255, 255, 0.79);
+        width: 60%;
+        padding: 10%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat (3, auto);
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    button {
+        font-family:'Pixelify', sans-serif;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #8a54ff;
+        color: white;
+        cursor: pointer;
+        
+    }
+
+    button:hover {
+        background-color: #fa61ff;
+    }
+
+    .item {
+        transition: transform 0.3s;
+    }
+    
+    .girando {
+        transform: scale(1.1);
+        animation: girar 0.5s infinite;
+    }
