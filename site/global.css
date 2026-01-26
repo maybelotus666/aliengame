@@ -5,4 +5,7 @@ body {
     background-position: center;
     text-align: center;
     min-height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    margin: 0 auto;
 }

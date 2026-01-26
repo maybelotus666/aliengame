@@ -19,3 +19,4 @@ document.querySelector('.botao-girar').addEventListener('click', girar);
 
 item.classList.add('girando');
 item.classList.remove('girando');
+
